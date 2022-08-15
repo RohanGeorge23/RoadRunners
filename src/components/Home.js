@@ -115,7 +115,7 @@ const Home = () => {
 
       <div className="furtherContainers">
         <div className="row featurette">
-          <div className="col-md-7">
+          <div className="col-md-7 ">
             <h2 className="featurette-heading fw-normal lh-1 my-4">
               Why Us
               <span className="text-muted">...?</span>
@@ -159,11 +159,11 @@ const Home = () => {
       <div className="furtherContainer">
         <div className="row featurette">
           <div className="col-md-7 order-md-2 ">
-            <h2 className="featurette-heading fw-normal lh-1">
+            <h2 className="featurette-heading fw-normal lh-1 my-4">
               Oh yeah, it’s that good.{" "}
               <span className="">See for yourself!</span>
             </h2>
-            <p className="lead ">
+            <p className="lead">
               We understand your busy schedule and will help you through a
               Hassel free service and maintenance of your vehicle, Providing
               weekly and monthly updates.
@@ -177,7 +177,7 @@ const Home = () => {
               </b>
             </p>
           </div>
-          <div className="col-md-5 order-md-1">
+          <div className="col-md-5">
             <img src={picTwo} className="sidess" alt="sides three" />
           </div>
         </div>
