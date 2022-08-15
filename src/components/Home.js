@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
 import picTwo from "./assets/picTwo.jpeg";
-import pic from "./assets/picThree.jpeg";
 import carWash from "./assets/carseats.jpeg";
 import { useNavigate } from "react-router-dom";
 
