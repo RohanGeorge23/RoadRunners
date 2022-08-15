@@ -1,0 +1,10 @@
+
+{
+    "data":[
+        {"itemImageSrc": "1.jpg","thumbnailImageSrc": "1.jpg","alt": "Basics Always Done right.","title": "Basic Car Cleaning"},
+        {"itemImageSrc": "2.jpg","thumbnailImageSrc": "2.jpg","alt": "Ultimate Cleaning for your Vehicle","title": "Deep Car Cleaning"},
+        {"itemImageSrc": "3.jpg","thumbnailImageSrc": "3.jpg","alt": "Get your Custom cleaning done.","title": "Custom Car Cleaning"},
+        {"itemImageSrc": "4.jpg","thumbnailImageSrc": "4.jpg","alt": "Shine like never before.","title": "Interior Care"},
+        {"itemImageSrc": "5.jpg","thumbnailImageSrc": "5.jpg","alt": "Clean and dust free care.","title": "Exterior Shine"}
+    ]
+}
