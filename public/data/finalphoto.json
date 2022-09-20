@@ -1,0 +1,13 @@
+{
+    "data":[
+        {"itemImageSrc": "exteriorCar.jpg","thumbnailImageSrc": "exteriorCar.jpg","alt": " Exterior Carwash - Starts at 449/-","title": "Car Exterior and Interior Polish "},
+        {"itemImageSrc": "InteriorDeep.jpg","thumbnailImageSrc": "InteriorDeep.jpg","alt": "Interior Deep Cleaning- Starts at 999/-","title": "Interior Car Cleaning"},
+        {"itemImageSrc": "acvent.jpg","thumbnailImageSrc": "acvent.jpg","alt": "Get your Custom cleaning done.","title": "AC Vent Cleaning "},
+        {"itemImageSrc": "ceramic.jpg","thumbnailImageSrc": "ceramic.jpg","alt": "Ceramic, Teflon &Nano Coating","title": "Ceramic Coating "},
+        {"itemImageSrc": "ppf.jpg","thumbnailImageSrc": "ppf.jpg","alt": "Clean and dust free care.","title": "PPF Edge Protectors"},
+        {"itemImageSrc": "complete.jpg","thumbnailImageSrc": "complete.jpg","alt": "Complete Car Service & Maintenance.","title": "Car Painting & Polish "},
+        {"itemImageSrc": " carMaint.jpg","thumbnailImageSrc": "carMaint.jpg","alt": "Ultimate job for your Vehicle","title": "Complete Car Service & Maintenance "},
+        {"itemImageSrc": "antiRust.jpg","thumbnailImageSrc": "antiRust.jpg","alt": "Anti Rust Underbody Coating .","title": "Anti Rust Underbody Coating "},
+        {"itemImageSrc": "upholestry.jpg","thumbnailImageSrc": "upholestry.jpg","alt": "Germ Cleaning & Sanitization","title": "Upholstry Cleaning"}
+    ]
+}

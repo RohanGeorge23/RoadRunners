@@ -11,14 +11,14 @@ const Header = () => {
         <div>
             <img src={logesh}  className='logo' alt='logo'/>
         </div>
-        {/* <div className='companyName'>
-              RoadRunners
-        </div> */}
         <div className='components'>
-
             <NavLink to='/'>Home</NavLink>
             <NavLink to='services'>Services</NavLink>
+            <NavLink to='galler'>Gallery</NavLink>
+            <NavLink to='blogs'>Blogs</NavLink>
             <NavLink to='contact'>Contact Us</NavLink>
+            <a href='https://forms.gle/UJBkBrVVXY4w7tPw6' target="_blank" rel="noreferrer" className="bookStar">Book Now</a>
+
         </div>
     </div>
   )

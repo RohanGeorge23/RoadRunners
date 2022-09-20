@@ -41,10 +41,10 @@ const Home = () => {
       <div className="my-5">
         <div className="cecece">
           <section>
-            <span className="block text-6xl font-bold mb-1">
+            <span className="areyy">
               Leave the Dirt Behind
             </span>
-            <div className="text-6xl colors font-bold mb-3">
+            <div className="areyre">
               The best cleaning services for your MotoBaby.
             </div>
             <p className="mt-0 mb-4 text-700 line-height-3"></p>
@@ -186,56 +186,58 @@ const Home = () => {
         <div className="card">
           <p className="freq">Frequently Asked Questions</p>
           <Accordion multiple activeIndex={[0]}>
-            <AccordionTab header="Is it OK to wash car with just water?">
-              Washing your car with just water will not remove much dirt, can
-              cause water spots and result in scratches if you use a mitt or
-              sponge without a shampoo. You should only ever rinse without
-              washing if you are using distilled water, or have a hydrophobic
-              coating and plan to drive the car afterwards
-            </AccordionTab>
-            <AccordionTab header="Can I wash my car every day?">
+
+            <AccordionTab header="Can I wash my car everyday?">
               In general, washing your car twice in a week will help keep it
-              clean without harming your car&#39;s finish. Keeping a regular
+              clean without harming your car's finish. Keeping a regular
               schedule like this will help keep most automobile finishes from
               fading excessively and stop the accumulation of dirt and debris in
-              areas that can damage your car&#39;s finish or paint
-            </AccordionTab>
-            <AccordionTab header="How many times should you wash your car?">
-              As a rule of thumb, you should wash your vehicle every two weeks.
-              That is if you&#39;re not driving down dirt roads daily or in an
-              area where salt is used on the highways. This is under normal wear
-              and tear circumstances.
-            </AccordionTab>
-            <AccordionTab header="Does washing your car make it last longer?">
-              Keep It Clean, washing your car does more than make it look nice.
-              It aids longevity by cleaning away contaminants that cause
-              corrosion
-            </AccordionTab>
-            <AccordionTab header="How many times should you wash your car?">
-              As a rule of thumb, you should wash your vehicle every two weeks.
-              That is if you&#39;re not driving down dirt roads daily or in an
-              area where salt is used on the highways. This is under normal wear
-              and tear circumstances.
+              areas that can damage your car's finish or paint. It aids
+              sustainability by cleaning away any minor substance that can cause
+              corrosion.
             </AccordionTab>
             <AccordionTab header="Why shouldn’t you wash your car in the car wash?">
-              you are essentially applying an abrasive and/or harsh chemicals to
+              You are essentially applying abrasive and/or harsh chemicals to
               the paint finish and the risk of swirls and scratches in the
               finish is always there. In fact, automatic car washes and cleaning
               bays are one of the most common culprits of minor damage on a car
-              or bike, Usage of same cloth for various vehicles will risk in
+              or bike. Usage of the same cloth for various vehicles will risk
               minute scratches fades your actual factory paint.
             </AccordionTab>
-            <AccordionTab header="How often should you hand polish your car?">
-              If you&#39;re taking good care of your car, polishing your car
-              once or twice a year should be sufficient to fix up any minor
-              scratches or wear. If you frequently find yourself with scrapes or
-              spots, you can take it to be polished more regularly.
+            <AccordionTab header="How often should you polish your car?">
+              If you're taking good care of your car, polishing your car once or
+              twice a year should be sufficient to fix up any minor scratches or
+              wear. If you frequently find yourself with scrapes or spots, you
+              can take it to be polished more regularly.
             </AccordionTab>
-            <AccordionTab header="How to Protect your car’s paint from oxidation?">
-              If you&#39;re taking good care of your car, polishing your car
-              once or twice a year should be sufficient to fix up any minor
-              scratches or wear. If you frequently find yourself with scrapes or
-              spots, you can take it to be polished more regularly.
+            <AccordionTab header="How can you protect your car’s paint from oxidation?">
+              To prevent oxidation, it is highly essential to wax your car once
+              every month. This will keep paint from being exposed to oxygen or
+              any other element. It is also recommended to keep your vehicle in
+              the garage, and in case that is not possible, car cover is
+              essential to protect your vehicle.
+            </AccordionTab>
+            <AccordionTab header="What is a Microfiber Cloth?">
+              A Microfiber cloth is basically a blend of 80% Polyester and 20%
+              Polyamides. It is designed in a very unique way making it
+              extremely soft, and if you observe it closely, you will be able to
+              see small tiny loops of yarn in huge numbers and hence it got the
+              name of Microfiber Cloth. It has a huge absorbing property and can
+              capture the dirt, dust and even mycobacterium.
+            </AccordionTab>
+            <AccordionTab header="Why are good quality microfiber cloths essential for automotive detailing?">
+              Without a doubt, a good quality MicroFiber Cloth will clean more
+              effectively than a normal cloth because of its high absorbing
+              capacity at 4 times more than a normal cotton cloth. It is
+              appropriate for sensitive surfaces like the car’s paint. The tiny
+              fiber size makes it non abrasive and extremely soft. It can clean
+              upto 99% Bacteria and is called the Dirt- Magnet.
+            </AccordionTab>
+            <AccordionTab header="How can I protect the clearcoat?">
+              The outer layer of the paint finish is the ClearCoat, and the most
+              effective way is to keep it clean and coated. Use our premium
+              membership to avail monthly subscription & keeping your car
+              shielded only with RoadRunners.
             </AccordionTab>
           </Accordion>
         </div>
