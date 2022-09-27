@@ -428,7 +428,8 @@ a.whatsapp {
 }
 @media(max-width:623px){
   .arfooters{
-    margin-left: 20px;
+    margin-top: 2px;
+    margin-left: 0px;
     font-size: 10px;
   }
 }
@@ -797,9 +798,65 @@ height: auto;  width: 100vw;
   padding-top: 1rem;
   margin: 23px;
   text-align: center;
-}@media(max-width:623px){
+  display: flex;
+  justify-content: center;
+}
+@media(max-width:623px){
   .immm{
     height: 200px;
     width: 350px;
   }
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 60%;
+}
+
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+  font-weight: 900;
+}
+
+.tg .tg-0lax {
+  text-align: center;
+  vertical-align: top
+}
+
+.cartype {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.sss{
+  display: flex;
+  justify-content: center;
+}
+
+.memeOnly{
+  display: flex;
+}
+.dataTab{
+  border: 3px solid black;
+  margin: 3rem;
+  text-align: center;
 }

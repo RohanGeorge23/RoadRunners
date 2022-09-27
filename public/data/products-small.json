@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "type": "Runners Car Spa",
+      "nonMember": "Starts from INR 449",
+      "nammaMembers": "INR 349"
+    },
+    {
+      "type": "Runners pro Spa",
+      "nonMember": "Starts from INR 1449",
+      "nammaMembers": "INR 1249"
+    },
+    {
+      "type": "AC Spa",
+      "nonMember": "Starts from INR 1999",
+      "nammaMembers": "INR 1699"
+    },
+    {
+      "type": "Hybrid upholstery Cleaning",
+      "nonMember": "Starts from INR 899",
+      "nammaMembers": "INR 799"
+    },
+    {
+      "type": "Germ Cleaning",
+      "nonMember": "Starts from INR 699",
+      "nammaMembers": "INR 499"
+    },
+    {
+      "type": "Rat/Pest Repellant",
+      "nonMember": "Starts from INR 499",
+      "nammaMembers": "INR 299"
+    }
+  ]
+}

@@ -1,29 +1,52 @@
 import React, { useState, useEffect } from "react";
 import { useRef } from "react";
+import { DataTable } from 'primereact/datatable';
+import { Column } from 'primereact/column';
 import { Card } from "primereact/card";
-import somee from './assets/tt.png'
-
-// import { Timeline } from "primereact/timeline";
-// import { Card } from "primereact/card";
 import "../App.css";
 import { PhotoService } from "./ImageService/ImageService";
 import { PhotoServices } from "./ImageService/ImageServices";
-
 import { Galleria } from "primereact/galleria";
 import { Button } from "primereact/button";
-// import hatchback from "./assets/hatchback.png";
-// import sedan from "./assets/sedan.png";
+import { ScrollTop } from "primereact/scrolltop";
 import oneTime from "./assets/oneTime.jpg";
 import interior from "./assets/interior.jpg";
 import serPic from "./assets/serviceT.jpg";
-import { ScrollTop } from "primereact/scrolltop";
-import { useNavigate } from "react-router-dom";
+import first from "./assets/1.jpg";
+import sec from "./assets/2.jpg";
+import thir from "./assets/3.jpg";
+import acvent from "./assets/acvent.jpg";
+import five from "./assets/upholestry.jpg";
+import cer from "./assets/ceramic.jpg";
+import ppf from "./assets/ppf.jpg";
+import under from "./assets/antiRust.jpg";
+import picOne from "./assets/picOne.jpg";
+import Complete from "./assets/complete.jpg";
+import picTwo from "./assets/picTwo.jpeg";
+
+
+import { ProductService } from './ImageService/ProductService';
+
+
+
+
+
+
+
+
 
 const Services = () => {
   const [images, setImages] = useState(null);
 
   const [images2, setImages2] = useState(null);
   const [imagess, setImagess] = useState(null);
+
+  const [products, setProducts] = useState([]);
+  const productService = new ProductService();
+
+  useEffect(() => {
+    productService.getProductsSmall().then(data => setProducts(data));
+}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const ref = useRef(null);
   const ref1 = useRef(null);
@@ -190,6 +213,131 @@ const Services = () => {
     </span>
   );
 
+
+  const he = (
+    <img
+      alt="Card"
+      src={first}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+
+  const hea = (
+    <img
+      alt="Card"
+      src={sec}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+
+  const head = (
+    <img
+      alt="Card"
+      src={acvent}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+  const heade = (
+    <img
+      alt="Card"
+      src={five}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+  const headee = (
+    <img
+      alt="Card"
+      src={cer}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+  const headeer = (
+    <img
+      alt="Card"
+      src={ppf}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+  const headeerr = (
+    <img
+      alt="Card"
+      src={cer}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+  const headeerrs = (
+    <img
+      alt="Card"
+      src={under}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+
+  const headeerrss = (
+    <img
+      alt="Card"
+      src={picOne}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+  const headeerrsss = (
+    <img
+      alt="Card"
+      src={Complete}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+  const headeerrssss = (
+    <img
+      alt="Card"
+      src={picTwo}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+  const heheh = (
+    <img
+      alt="Card"
+      src={first}
+      onError={(e) =>
+        (e.target.src =
+          "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
+      }
+    />
+  );
+
   // let navigate = useNavigate();
 
   // const handllesh = () => {
@@ -219,31 +367,6 @@ const Services = () => {
         <p className="serverr">Service Types</p>
         <div className="serviceCards">
           <Card
-            title="Carwash Subscription plan"
-            style={{ width: "25em", marginBottom: "15px" }}
-            footer={footer}
-            header={header}
-            className="saree"
-          >
-            <p className="m-0" style={{ lineHeight: "1.5" }}>
-              focused on providing complete care and maintanance that your car
-              needs. We offer plans for 15days and for 13days which also inludes
-              Basic Interior Cleaning.
-            </p>
-          </Card>
-          <Card
-            title="Members Only"
-            style={{ width: "25em", marginBottom: "15px" }}
-            footer={footer1}
-            header={headers}
-            className="saree"
-          >
-            <p className="m-0" style={{ lineHeight: "1.5" }}>
-              "Leave the Dirt Behind" is not just our slogan. Choose this plan
-              if you want discounted rates and special perks than a normal user!
-            </p>
-          </Card>
-          <Card
             title="One time services"
             style={{ width: "25em", marginBottom: "15px" }}
             footer={footer1}
@@ -254,6 +377,19 @@ const Services = () => {
               Experts auto detailing servives will be estimated based upon the
               vehical model, year of manufacture and requirements adhering to
               the changes
+            </p>
+          </Card>
+
+          <Card
+            title="Namma Membership plan"
+            style={{ width: "25em", marginBottom: "15px" }}
+            footer={footer1}
+            header={headers}
+            className="saree"
+          >
+            <p className="m-0" style={{ lineHeight: "1.5" }}>
+              "Leave the Dirt Behind" is not just our slogan. Choose this plan
+              if you want discounted rates and special perks than a normal user!
             </p>
           </Card>
         </div>
@@ -279,79 +415,7 @@ const Services = () => {
               but also helps save water and millions of life on this planet.
             </b>
           </div>
-          <p className="cento">
-            <span className="text-900">Car Subscription </span>
-            <span className="text-blue-600">Plans</span>
-          </p>
-          <div className="carWashSubs">
-            <div className="mx-5">
-              <Card
-                title="FORTNIGHT"
-                className="strr"
-                style={{
-                  background: "#373B44",
-                  background:
-                    "-webkit-linear-gradient(to left, #4286f4, #373B44)" /* Chrome 10-25, Safari 5.1-6 */,
-                  background:
-                    "linear-gradient(to left, #4286f4, #373B44)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
-                  padding: "2rem",
-                  width: "25rem",
-                  height:"30rem",
-                  marginBottom: "2em",
-                  color: "#ff9900",
-                  textAlign: "center",
-                }}
-              >
-                <div className="loco">
-                  <p className="dada">
-                    15 Days <span className="staa">(Starts @ INR 599)</span>
-                  </p>
-                  <ul>
-                    <li>3 Exterior Cleaning</li>
-                    <li>3 Tyre Polish & Glass Polish</li>
-                    <li>1 Interior Vacuuming</li>
-                    <li>1 Engine Deep Cleaning Service</li>
-                    <li>1 Dashboard Polish</li>
-                    <li>1 Door Pad Polish</li>
-                  </ul>
-                </div>
-              </Card>
-            </div>
-            <div className="mx-5">
-              <Card
-                title="MONTHLY"
-                className="strr"
-                style={{
-                  background: "#373B44",
-                  background:
-                    "-webkit-linear-gradient(to right, #4286f4, #373B44)" /* Chrome 10-25, Safari 5.1-6 */,
-                  background:
-                    "linear-gradient(to right, #4286f4, #373B44)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
-                  padding: "2rem",
-                  width: "25rem",
-                  marginBottom: "2em",
-                  color: "#ff9900",
-                  textAlign: "center",
-                  padding: "2rem",
-                }}
-              >
-                <div className="loco">
-                  <p className="dada">30 Days</p>
 
-                  <ul>
-                    <li>5 Exterior Cleaning</li>
-                    <li>5 Tyre Polish & Glass Polish</li>
-                    <li>1 Interior Vacuuming</li>
-                    <li> 1 Engine Deep Cleaning Service</li>
-                    <li>1 Door Pad Polish </li>
-                    <li>1 Vehicle Check Up</li>
-                    <li>1 Dashboard Polish</li>
-                    <li>1 Rat Repellent service with 1 month waranty</li>
-                  </ul>
-                </div>
-              </Card>
-            </div>
-          </div>
           <p className="cento" ref={ref1}>
             <span className="text-900">Members </span>
             <span className="text-blue-600">Only</span>
@@ -359,7 +423,7 @@ const Services = () => {
           <div className="carWashSubs">
             <div className="mx-5">
               <Card
-                title="3 MONTHS - INR 799"
+                title="3 MONTHS - INR 999"
                 className="strr"
                 style={{
                   background: "#373B44",
@@ -375,26 +439,13 @@ const Services = () => {
                 }}
               >
                 <div className="loco">
-                  <p className="dada">30 Days</p>
-                  {/* <ul>
-                    <li>2 Vaccum cleaning and Blowing off dust</li>
-                    <li>2 Dashboard cleaning and applying protection</li>
-                    <li>
-                      2 Cleaning of uphoistery depending on the product chosen
-                    </li>
-                    <li>2 Cleaning of all glasses and door panels</li>
-                    <li>2 Dashboard waxing once a month</li>
-                    <li>
-                      2 Complete check of AC vent, Brake Oil, Tyre Guage and
-                      Engine Oil.
-                    </li>
-                  </ul> */}
+
                 </div>
               </Card>
             </div>
             <div className="mx-5">
               <Card
-                title="6 MONTHS - INR 1499"
+                title="6 MONTHS - INR 1999"
                 className="strr"
                 style={{
                   background: "#373B44",
@@ -410,28 +461,12 @@ const Services = () => {
                   padding: "2rem",
                 }}
               >
-                <div className="loco">
-                  <p className="dada">60 Days</p>
-
-                  {/* <ul>
-                    <li>5 Vaccum cleaning and Blowing off dust</li>
-                    <li>5 Dashboard cleaning and applying protection</li>
-                    <li>
-                      5 Cleaning of uphoistery depending on the product chosen
-                    </li>
-                    <li>5 Cleaning of all glasses and door panels</li>
-                    <li>5 Dashboard waxing once a month</li>
-                    <li>
-                      5 Complete check of AC vent, Brake Oil, Tyre Guage and
-                      Engine Oil.
-                    </li>
-                  </ul> */}
-                </div>
+                <div className="loco"></div>
               </Card>
             </div>
             <div className="mx-5">
               <Card
-                title="9 MONTHS - INR 2499"
+                title="12 MONTHS - INR 2999"
                 className="strr"
                 style={{
                   background: "#373B44",
@@ -447,28 +482,234 @@ const Services = () => {
                   padding: "2rem",
                 }}
               >
-                <div className="loco">
-                  <p className="dada">90 Days</p>
-
-                  {/* <ul>
-                    <li>5 Vaccum cleaning and Blowing off dust</li>
-                    <li>5 Dashboard cleaning and applying protection</li>
-                    <li>
-                      5 Cleaning of uphoistery depending on the product chosen
-                    </li>
-                    <li>5 Cleaning of all glasses and door panels</li>
-                    <li>5 Dashboard waxing once a month</li>
-                    <li>
-                      5 Complete check of AC vent, Brake Oil, Tyre Guage and
-                      Engine Oil.
-                    </li>
-                  </ul> */}
-                </div>
+                <div className="loco"></div>
               </Card>
             </div>
           </div>
-          <div className="mb-3 font-bold text-2xl yols">
-            <span className="text-900">One Time </span>
+          <div>
+            <div className="dataTab">
+                <DataTable value={products} >
+                    <Column field="type" header="Type"></Column>
+                    <Column field="nonMember" header="Non Members"></Column>
+                    <Column field="nammaMembers" header="Namma Members"></Column>
+                </DataTable>
+                <div>
+                  <p className="mt-5"><b>** Prices may vary based on car type & additional Add-on services</b></p>
+                </div>
+            </div>
+        </div>
+          <div className="memeOnly row">
+            <Card
+              title="Runner Car Spa"
+              style={{ width: "25em" }}
+              className="col-1 mx-5"
+              header={he}
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Exterior Waterless Carwash</li>
+                <li>Exterior Tyre Polish</li>
+                <li>Dashboard Cleaning and Polish</li>
+                <li>Interior Vacuunibg of Dust</li>
+                <li>Sanitization</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Runner Pro Car Spa"
+              style={{ width: "25em" }}
+              header={hea}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Exterior Waterless Carwash (water wash if required)</li>
+                <li>Interior Vacuuming of Dust</li>
+                <li>Complete Interior Detailing</li>
+                <li>Dashboard, Door mats & Door Pads cleaning & Polish </li>
+                <li>Glass Polish for Protection fromheat cracking</li>
+                <li>Foam Cleaning for PU & Leather</li>
+                <li>Sanitization</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="AC Spa"
+              style={{ width: "25em" }}
+              header={head}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>AC Vent Cleaning</li>
+                <li>AC Inspection</li>
+                <li>Dashboard Cleaning</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Unholestry Cleaning"
+              style={{ width: "25em" }}
+              header={heade}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Interior Vacuuming & Detailing</li>
+                <li>Seat Scrubbing</li>
+                <li>Carpet & Doormat Cleaning</li>
+                <li>Interior Detailed Cleaning & Wash</li>
+                <li>Dashboard & Door pad cleaning & polish</li>
+                <li>Sanitization</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Ceramic Coating"
+              style={{ width: "25em" }}
+              header={headee}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Detailed Paint Correction</li>
+                <li>Removal of scratches</li>
+                <li>2 layers of Coating</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="PPF- Paint Protection Film"
+              style={{ width: "25em" }}
+              header={headeer}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Detailed PPF-Paint Protection Film</li>
+                <li>Edge Protectors</li>
+                <li>3 years Warranty</li>
+                <li>Free Runners Pro Car Spa</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Teflon Coating "
+              style={{ width: "25em" }}
+              header={headeerr}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Detailed Paint Correction</li>
+                <li>Removal of Scratches</li>
+                <li>Teflon Coating</li>
+                <li>Anti-Rust Protection</li>
+                <li>Free Runners Pro Car Spa</li>
+                <li>Germ Cleaning</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Anti Rust Underbody Coating"
+              style={{ width: "25em" }}
+              header={headeerrs}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Detailed Underbosy Coating</li>
+                <li>Cleaning & Polish</li>
+                <li>Anti Rust Corrosion Treatment</li>
+                <li>Free Runners Car Spa</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Germ Cleaning & Sanitization"
+              style={{ width: "25em" }}
+              header={headeerrss}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Runners Pro Car Spa</li>
+                <li>Spraying of Disinfectant on interior & exteriors</li>
+                <li>Sanitization of sear covers and handles</li>
+                <li>Removal of Germs </li>
+                <li>Glass Polish for Protection fromheat cracking</li>
+                <li>Free Aroma of RoadRunners - (50g)</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Rat/ Pest Repellant"
+              style={{ width: "25em" }}
+              header={headeerrsss}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Rat/Pest Repellant Detailed Tratment</li>
+                <li>Protection of under body and wires</li>
+                <li>Spraying of disinfectant on interior and underbody</li>
+                <li>Germs Disinfection on interiors and underbody</li>
+                <li>Free Aroma of RoadRunners - (50g)</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Runners Car Service & Maintenance"
+              style={{ width: "25em" }}
+              header={headeerrssss}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Detailed Car Insprection</li>
+                <li>Runners Car Spa</li>
+                <li>Engine Oil Replacement</li>
+                <li>Fluid Check</li>
+                <li>AC VentCleaning & Maintenance</li>
+                <li>Coolant & Brake Fluid Change</li>
+                <li>Spark Plug Check</li>
+                <li>Detailed Engine Cleaning</li>
+               </ul>
+              </p>
+            </Card>
+            <Card
+              title="Full Body Painting"
+              style={{ width: "25em" }}
+              header={heheh}
+              className="col-1 mx-5"
+
+            >
+              <p className="m-0" style={{ lineHeight: "1.5" }}>
+               <ul>
+                <li>Runners Pro Car Spa</li>
+                <li>Grade A Primer</li>
+                <li>Extra Polish</li>
+                <li>Panel Wise Rubbing & Polish</li>
+                <li>5 Layers of Paint</li>
+                <li>2 years Warranty </li>
+                <li>Panel Wise/ Fender Wise also available.</li>
+               </ul>
+              </p>
+            </Card>
+          </div>
+
+          <div className="mb-3 font-bold text-2xl yols mt-6">
+            <span className="text-900">One Time &nbsp;</span>
             <span className="text-blue-600">Services</span>
           </div>
           {/* new slider for one time */}
@@ -487,204 +728,6 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="pricii">
-            <h1> Pricing</h1>
-            <img src={somee} className="immm"/>
-          </div>
-          {/* <div>
-            <div className="surface-0 text-center">
-              <div className="mb-3 font-bold text-2xl">
-                <span className="text-900">One Time </span>
-                <span className="text-blue-600">Services</span>
-              </div>
-              <div className="text-700 text-sm mb-6">
-                No Subscription plan required{" "}
-              </div>
-              <div className="grid">
-                <div className="col-12 md:col-2 mb-4 px-5">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-thumbs-up text-4xl text-blue-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Waterless Carwash
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 mb-4 px-5">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-thumbs-up text-4xl text-blue-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Full Body Carwash
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 mb-4 px-5">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-thumbs-up text-4xl text-blue-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Interior deep cleaning
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 mb-4 px-5">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-thumbs-up text-4xl text-blue-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Rat/Pest Repellant
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 mb-4 px-5">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-thumbs-up text-4xl text-blue-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    AC vent cleaning
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-thumbs-up text-4xl text-blue-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Upholstery Cleaning
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-shield text-4xl text-orange-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Sanitization and Germ Cleaning
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-shield text-4xl text-orange-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">Paining</div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-shield text-4xl text-orange-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Sunroof Service
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-shield text-4xl text-orange-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Ceramic Coating
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-shield text-4xl text-orange-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Teflon Coating
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-shield text-4xl text-orange-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    PPF Edge Protectors
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-star text-4xl text-green-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">Nano Coating</div>
-                </div>
-                <div className="col-12 md:col-3 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-star text-4xl text-green-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Anti-Rust Underbody Coating
-                  </div>
-                </div>
-                <div className="col-12 md:col-3 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-star text-4xl text-green-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Car Fluid Check
-                  </div>
-                </div>
-                <div  className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-star text-4xl text-green-500"></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">
-                    Brake Maintanance
-                  </div>
-                </div>
-                <div className="col-12 md:col-2 md:mb-4 mb-0 px-3">
-                  <span
-                    className="p-3 shadow-2 mb-3 inline-block"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <i className="pi pi-star text-4xl text-green-500" ref={ref2}></i>
-                  </span>
-                  <div className="text-900 mb-3 font-medium">Full Service</div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

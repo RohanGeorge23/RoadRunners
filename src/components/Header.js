@@ -7,7 +7,8 @@ import '../App.css'
 
 const Header = () => {
   return (
-    <div className='headerBoss'>
+    <>
+        <div className='headerBoss'>
         <div>
             <img src={logesh}  className='logo' alt='logo'/>
         </div>
@@ -20,7 +21,12 @@ const Header = () => {
             <a href='https://forms.gle/UJBkBrVVXY4w7tPw6' target="_blank" rel="noreferrer" className="bookStar">Book Now</a>
 
         </div>
+        
     </div>
+    
+    </>
+
+    
   )
 }
 
