@@ -1,11 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
-import one from './assets/assetmore/1.jpg'
+import one from './assets/assetmore/37.jpeg'
 import two from './assets/assetmore/2.jpg'
-import three from './assets/assetmore/3.jpg'
+import three from './assets/assetmore/38.jpeg'
 import four from './assets/assetmore/4.jpg'
 import five from './assets/assetmore/5.jpg'
 import six from './assets/assetmore/6.jpg'
-import seven from './assets/assetmore/7.jpg'
+import seven from './assets/assetmore/36.jpeg'
 import eight from './assets/assetmore/8.jpg'
 import nine from './assets/assetmore/9.jpeg'
 import ten from './assets/assetmore/10.jpeg'
@@ -20,7 +20,7 @@ function Galler() {
     <div className='homm'>
 
     <Carousel fade>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item >
         <img
           className="d-block w-100"
           src={one}

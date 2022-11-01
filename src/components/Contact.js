@@ -59,8 +59,7 @@ const Contact = () => {
 
             <p>
               {" "}
-              #31, 4th cross, Ramaiah Layout <br />
-              Kammanahalli- Bangalore : 560084
+              #33, Banjara Layout, Trinity Enclave 1st cross,<br/> Kalkere, Bangalore - 43 
             </p>
           </div>
 
